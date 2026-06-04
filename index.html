@@ -3,26 +3,178 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cichy Photography</title>
+<title>Cichy Photography | Aviation & Nature</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{
-  margin:0;
-  background:#050505;
-  color:white;
-  font-family:Arial,sans-serif;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
-  text-align:center;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
-h1{font-size:3rem;}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#050505;
+color:white;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:1.3rem;
+max-width:700px;
+margin:auto;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+border:2px solid #f39c12;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+background:#f39c12;
+color:black;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+color:#ccc;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:10px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+padding:30px;
+text-align:center;
+border-top:1px solid #222;
+color:#888;
+}
+
 </style>
 </head>
 <body>
-<div>
-  <h1>Cichy Photography</h1>
-  <p>Aviation & Nature Photography</p>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Cichy Photography</h1>
+
+<p>
+Fotografia lotnicza, przyrodnicza i reportażowa.
+Uchwycone emocje, światło i chwile, które trwają tylko sekundę.
+</p>
+
+<a href="#portfolio" class="btn">Zobacz Portfolio</a>
+
 </div>
+
+</header>
+
+<section>
+
+<h2 class="title">O mnie</h2>
+
+<div class="about">
+
+<p>
+Mam na imię Mateusz. Moją pasją jest fotografia lotnicza,
+pokazy airshow oraz fotografia natury.
+Każde zdjęcie to próba zatrzymania wyjątkowego momentu
+i pokazania go z nieco innej perspektywy.
+</p>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="title">Portfolio</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80">
+
+<img src="https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=1200&q=80">
+
+<img src="https://images.unsplash.com/photo-1521405924368-64c5b84bec60?auto=format&fit=crop&w=1200&q=80">
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2 class="title">Kontakt</h2>
+
+<p>Instagram: @cichy.photography</p>
+
+</section>
+
+<footer>
+
+© 2025 Cichy Photography
+
+</footer>
+
 </body>
 </html>
